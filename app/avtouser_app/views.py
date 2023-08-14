@@ -28,5 +28,5 @@ def login(request):
     login = request.POST.get('login')
     password = request.POST.get('password')
     if MyBase.objects.filter(login=login, password=password).first():
-        return render(request, "avtouser_app/index.html")
+        return render(request, "avtouser_app/final.html")
     return render(request, "avtouser_app/autorisation.html")
