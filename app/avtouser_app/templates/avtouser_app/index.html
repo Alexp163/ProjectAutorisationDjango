@@ -6,10 +6,10 @@
 </head>
 <body>
     <h1>Hello, man !!! </h1>
-    <form action="autorisation/">
+    <form action="{% url 'autorisation' %}">
         <input type="submit" value="Авторизоваться">
     </form>
-    <form action="registration/">
+    <form action="{% url 'registration' %}">
         <input type="submit" value="Зарегистрироваться">
     </form>
 

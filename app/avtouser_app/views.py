@@ -24,6 +24,7 @@ def register(request):
     MyBase.objects.get_or_create(login=login, password=password1)
     return render(request, "avtouser_app/index.html")
 
+
 def login(request):
     login = request.POST.get('login')
     password = request.POST.get('password')

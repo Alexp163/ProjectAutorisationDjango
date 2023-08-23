@@ -3,9 +3,8 @@ from .views import avtouser, autorisation_user, registration_user, register, log
 
 urlpatterns = [
     path('', avtouser),
-    path('autorisation/', autorisation_user),
-    path('registration/', registration_user),
+    path('autorisation/', autorisation_user, name='autorisation'),
+    path('registration/', registration_user, name='registration'),
     path('register/', register, name='register'),
     path('login/', login, name='login')
-
 ]
